@@ -61,19 +61,21 @@ export const theme = createTheme({
                     },
                 },
                 outlinedSuccess: {
-                    borderColor: '#24D5AA',
-                    background: '#24D5AA',
+                    borderColor: '#F1F1F1',
+                    background: '#F1F1F1',
+                    color: '#262B40',
                     '&:hover': {
+                        color: '#fff',
                         background: '#18c097',
                         borderColor: '#24D5AA',
                     },
                 },
                 outlinedError: {
-                    borderColor: '#707070',
-                    background: '#707070',
+                    borderColor: '#F06566',
+                    background: '#F06566',
                     '&:hover': {
-                        background: '#f47979',
-                        borderColor: '#f47979',
+                        background: '#ED373B',
+                        borderColor: '#ED373B',
                     },
                 },
             },

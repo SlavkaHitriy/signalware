@@ -14,9 +14,8 @@ export const DefaultInput = ({ label, placeholder, ...otherProps }) => {
                 width: '100%',
                 '.MuiFormLabel-root': {
                     fontSize: 15,
-                    fontWeight: 700,
                     transform: 'unset',
-                    color: 'primary.main',
+                    color: '#A8A8A7',
                     position: 'static',
                     lineHeight: '1.5',
                     '&.Mui-disabled': {
@@ -33,9 +32,10 @@ export const DefaultInput = ({ label, placeholder, ...otherProps }) => {
                     },
                 },
                 '.MuiInputBase-root': {
-                    mt: label ? 1 : 0,
+                    mt: 0,
                     '&::before': {
-                        borderColor: 'grey.light',
+                        borderBottom: '2px dotted',
+                        borderColor: 'primary.main',
                     },
                     '&.Mui-disabled': {
                         '&::before': {

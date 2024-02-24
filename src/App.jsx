@@ -14,6 +14,7 @@ import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import { Login } from './modules/Login';
 import { InventoryNew } from '@/modules/InventoryNew';
 import { Dashboard } from '@/modules/Dashboard/index.js';
+import { Settings } from '@/modules/Settings/index.js';
 
 export const App = () => {
     const location = useLocation();
@@ -28,6 +29,8 @@ export const App = () => {
                         <Route path='/auth/login' element={<Login />} />
 
                         <Route path='/dashboard' element={<Dashboard />} />
+
+                        <Route path='/settings' element={<Settings />} />
 
                         {/*<Route path='/inventory' element={<Inventory />} />*/}
                         {/*<Route path='/inventory/new' element={<InventoryNew />} />*/}
