@@ -1,6 +1,5 @@
-import React, { StrictMode } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
-import 'mapbox-gl/dist/mapbox-gl.css';
 import './assets/styles/general.scss';
 import { App } from './App.jsx';
 import { BrowserRouter } from 'react-router-dom';
