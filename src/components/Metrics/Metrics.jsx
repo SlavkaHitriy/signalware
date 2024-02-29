@@ -26,7 +26,7 @@ export const Metrics = ({ data, icon }) => {
                 {icon}
             </Box>
             <Stack direction={'row'} spacing={2.5} alignItems={'center'}>
-                {data.map(({ title, value, isGreen, color, icon, hasIndicator }, idx) => (
+                {data.map(({ title, value, isGreen, isRed, color, icon, hasIndicator }, idx) => (
                     <React.Fragment key={title}>
                         <Stack direction={'row'} spacing={1}>
                             {icon && (
@@ -45,7 +45,11 @@ export const Metrics = ({ data, icon }) => {
                             <Stack>
                                 <Typography>{title}</Typography>
                                 <Stack direction={'row'} alignItems={'center'} justifyContent={'space-between'}>
-                                    <Typography fontWeight={700} fontSize={25} color={isGreen && 'green.main'}>
+                                    <Typography
+                                        fontWeight={700}
+                                        fontSize={25}
+                                        color={isGreen ? 'green.main' : isRed && 'red.main'}
+                                    >
                                         {value}
                                     </Typography>
                                     {hasIndicator && (

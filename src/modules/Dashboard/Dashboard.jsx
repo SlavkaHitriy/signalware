@@ -1,6 +1,6 @@
 import ClusterIcon from '/public/icons/cluster.svg?react';
 import { Metrics } from '@/components/Metrics';
-import { metrics1, metrics2, metrics3 } from '@/modules/Inventory/data/metrics';
+import { metrics1, metrics2, metrics3 } from './data/metrics.jsx';
 import { SearchInput } from '@/components/SearchInput';
 import { Filters } from '@/ui/Filters';
 import { Box, Stack, Typography } from '@mui/material';

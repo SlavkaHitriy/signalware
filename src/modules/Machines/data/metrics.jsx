@@ -18,7 +18,7 @@ export const metrics2 = [
     {
         title: 'Down',
         value: 23,
-        color: 'primary.main',
+        color: 'orange.main',
     },
     {
         title: 'Offline',
