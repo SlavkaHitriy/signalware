@@ -30,7 +30,9 @@ export const Dashboard = () => {
                         borderRadius={'10px'}
                         border={'2px dashed'}
                         borderColor={item.borderColor || 'grey.light'}
-                        width={'calc(20% - 10px)'}
+                        width={'calc(16.66666% - 10px)'}
+                        maxWidth={245}
+                        minWidth={200}
                     >
                         <Stack direction={'row'} mb={1} spacing={2}>
                             <Stack
